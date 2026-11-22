@@ -11,6 +11,7 @@ Un piloto para ayudar a talleres y pymes a elegir qué entidades públicas segui
 - **Tablero.** Filtra por comprador, mes o código CPC. En **Procesos** puedes abrir cada ficha oficial de SERCOP. La [copia estática](dashboards/sitio/) se puede abrir localmente con `dashboards/sitio/index.html`.
 - **Power BI Desktop.** Abre el archivo PBIX con sus datos de 2025 ya importados. El [proyecto editable](dashboards/powerbi/Mantenimiento%20vehicular.pbip), las [capturas](dashboards/capturas/) y el [recorrido narrado](dashboards/recorrido.mp4) muestran las cinco páginas. [Guía de los tableros](docs/fase-4-tableros.md).
 - **Análisis.** El [cuaderno ejecutado](notebooks/fase-3-analisis.ipynb) conserva las tablas y los gráficos del corte del 22 de noviembre de 2026. La [nota de hallazgos](docs/fase-3-hallazgos.md) detalla las métricas.
+- **Ciencia de datos.** La [validación temporal de montos](docs/fase-6-modelo-montos.md) compara el rango histórico general con uno por CPC e incluye el comando para reproducir la prueba.
 
 ## Reproducir con SERCOP y PostgreSQL
 

@@ -50,4 +50,8 @@ Para medirlo, se propone que entre cinco y diez proveedores elijan compradores y
 - **Plazos.** En 38 procesos del piloto faltaba una firma utilizable. La mediana describe los casos con firma observada. La fecha de cierre de ofertas faltaba en el corte, por lo que debe consultarse el cronograma de cada ficha. Las fechas de ejecución y de pago quedan fuera del análisis.
 - **Validación.** El tablero público abre sin sesión. Quedan pendientes el refresco autenticado en Power BI Desktop y una lectura con una persona ajena al proyecto. La prueba de lectura consiste en pedirle que explique a quién ayuda el tablero y qué haría con él después de ver el resumen.
 
+## Prueba de estimación de montos
+
+Con el historial disponible al inicio de cada mes, se estimó un rango de monto para los contratos de las aperturas de julio a diciembre de 2025. El rango general cubrió **43 de 99 montos observados**. Al usar rangos más estrechos por código CPC donde había suficientes comparables, la cobertura bajó a **36 de 99** y el error medio de la estimación quedó cerca de **USD 40.000** en ambos modelos. El tablero presenta montos históricos para seleccionar fichas comparables. [Validación temporal y resultados](fase-6-modelo-montos.md).
+
 _SERCOP · Contrataciones Abiertas Ecuador. Elaboración propia a partir de registros filtrados, normalizados y agregados._ [Datos de origen](https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/datos-abiertos/) · [CC BY 3.0 Ecuador](https://creativecommons.org/licenses/by/3.0/ec/).
