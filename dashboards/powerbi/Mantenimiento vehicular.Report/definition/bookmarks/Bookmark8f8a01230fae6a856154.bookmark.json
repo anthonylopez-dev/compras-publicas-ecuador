@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "name": "Bookmark8f8a01230fae6a856154",
+  "displayName": "Montos y plazos",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "8f8a01230fae6a856154",
+    "sections": {
+      "8f8a01230fae6a856154": {
+        "visualContainers": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "d53e1531b16aa1aa3280",
+  "position": {
+    "x": 859,
+    "y": 320,
+    "z": 1100,
+    "width": 360,
+    "height": 245,
+    "tabOrder": 1100
+  },
+  "visual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Prioriza por meses activos y conserva una búsqueda por rubro para las entidades con aperturas puntuales. La cobertura CPC corresponde a todas las subastas inversas del mes.",
+                    "textStyle": {
+                      "fontSize": "17pt",
+                      "fontFamily": "Segoe UI",
+                      "color": "#183C30"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Compras públicas Ecuador",
+  "dataColors": [
+    "#246A54",
+    "#84AA99",
+    "#406274",
+    "#AA7850",
+    "#9A704D"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#183C30",
+  "tableAccent": "#246A54",
+  "textClasses": {
+    "label": {
+      "fontFace": "Segoe UI",
+      "color": "#4A6458",
+      "fontSize": 10
+    }
+  }
+}

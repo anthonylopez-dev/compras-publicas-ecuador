@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "97b2919e5a26ae737026",
+  "position": {
+    "x": 32,
+    "y": 176,
+    "z": 600,
+    "width": 288,
+    "height": 105,
+    "tabOrder": 600
+  },
+  "visual": {
+    "visualType": "card",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Mediana de contrato"
+                }
+              },
+              "queryRef": "Procesos.Mediana de contrato",
+              "nativeQueryRef": "Mediana de contrato"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

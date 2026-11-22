@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "name": "Bookmarkd6ec80af38ae74eaba60",
+  "displayName": "Compradores",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "d6ec80af38ae74eaba60",
+    "sections": {
+      "d6ec80af38ae74eaba60": {
+        "visualContainers": {}
+      }
+    }
+  }
+}

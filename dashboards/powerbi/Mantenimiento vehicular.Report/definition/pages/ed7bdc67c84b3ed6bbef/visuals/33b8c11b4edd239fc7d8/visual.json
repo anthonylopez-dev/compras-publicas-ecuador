@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "33b8c11b4edd239fc7d8",
+  "position": {
+    "x": 956,
+    "y": 176,
+    "z": 900,
+    "width": 288,
+    "height": 105,
+    "tabOrder": 900
+  },
+  "visual": {
+    "visualType": "card",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Cobertura CPC"
+                }
+              },
+              "queryRef": "Procesos.Cobertura CPC",
+              "nativeQueryRef": "Cobertura CPC"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

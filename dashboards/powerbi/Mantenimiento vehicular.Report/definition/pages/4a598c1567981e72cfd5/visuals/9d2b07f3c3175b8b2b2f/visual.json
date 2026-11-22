@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "9d2b07f3c3175b8b2b2f",
+  "position": {
+    "x": 32,
+    "y": 295,
+    "z": 1000,
+    "width": 820,
+    "height": 365,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Oferentes"
+                }
+              },
+              "queryRef": "Procesos.Oferentes",
+              "nativeQueryRef": "Oferentes"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Adjudicados con conteo"
+                }
+              },
+              "queryRef": "Procesos.Adjudicados con conteo",
+              "nativeQueryRef": "Adjudicados con conteo"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Procesos"
+                  }
+                },
+                "Property": "Oferentes"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Adjudicados por número de oferentes'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

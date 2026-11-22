@@ -1,0 +1,67 @@
+{
+  "anio": 2025,
+  "modalidad": "Subasta Inversa Electrónica",
+  "total_anual": 18333,
+  "cortes": [
+    {
+      "mes": "2025-01",
+      "total": 91,
+      "sha256": "9e780ec6182ecff78794cae6ca380f57901d7b9996c82cef3bd318211dd76396"
+    },
+    {
+      "mes": "2025-02",
+      "total": 732,
+      "sha256": "caf0742847a0ea3b70fd2497a2f9ed5ef7a909506ccb13d1037abce00536e7d7"
+    },
+    {
+      "mes": "2025-03",
+      "total": 1661,
+      "sha256": "713204c0f8fb3c08e322cd21943543d2d74f07929b23f145b3d2209e18a7f4b0"
+    },
+    {
+      "mes": "2025-04",
+      "total": 2473,
+      "sha256": "47809088aa85410866086c77908d276956d6c179211b4d112f0f5c1116306595"
+    },
+    {
+      "mes": "2025-05",
+      "total": 1855,
+      "sha256": "20618e6145985db2fcdcf503a971000f369390528797fb6eed1ac9e0ab44c03d"
+    },
+    {
+      "mes": "2025-06",
+      "total": 1946,
+      "sha256": "0f669c9d77398b3e98a1a8d1f89452ec985129730a992ddb9f729d21ed6195b6"
+    },
+    {
+      "mes": "2025-07",
+      "total": 2386,
+      "sha256": "ef575cc651bcda37e9e882c8ab8011502f114dae2fc1fe5074c6565459076484"
+    },
+    {
+      "mes": "2025-08",
+      "total": 787,
+      "sha256": "6e817e8e4948a1b5004867cea2c64638bbf697a5480133eaa7966e310346f01d"
+    },
+    {
+      "mes": "2025-09",
+      "total": 1154,
+      "sha256": "fec9e2faf704b08f0d56e3dd245f7d78a831e98cfa00825d8dc820f985b121db"
+    },
+    {
+      "mes": "2025-10",
+      "total": 1462,
+      "sha256": "5625ef47e64278cd84e82ea098acb4f9b94f275af37645c98a386d771b844d21"
+    },
+    {
+      "mes": "2025-11",
+      "total": 1567,
+      "sha256": "c4b72a78fb7f35c6c93e396112b9adea4f07dd499d9e8f9acc003e8d79202410"
+    },
+    {
+      "mes": "2025-12",
+      "total": 2219,
+      "sha256": "3007fd03e26d0db2b5a5926ae0415ad6801b6db7f85ca179372108e0196d3d1d"
+    }
+  ]
+}

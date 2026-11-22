@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "cb374f91da308f849b51",
+  "position": {
+    "x": 32,
+    "y": 22,
+    "z": 100,
+    "width": 1195,
+    "height": 59,
+    "tabOrder": 100
+  },
+  "visual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Quién abre procesos en distintos meses",
+                    "textStyle": {
+                      "fontSize": "27pt",
+                      "fontFamily": "Segoe UI",
+                      "color": "#183C30",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

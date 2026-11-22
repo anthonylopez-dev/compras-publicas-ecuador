@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es-EC">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mantenimiento vehicular · Compras públicas de Ecuador</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="tablero.css">
+  <script src="datos.js" defer></script>
+  <script src="tablero.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <span>Compras públicas <span class="pais">Ecuador</span></span>
+      <a href="https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/datos-abiertos/">Datos del SERCOP</a>
+    </div>
+  </header>
+  <main>
+    <header class="introduccion">
+      <h1>Mantenimiento vehicular</h1>
+      <p>Subasta Inversa Electrónica · CPC 87141 · Enero a diciembre de 2025</p>
+    </header>
+    <p id="estado" role="status">Cargando datos del tablero…</p>
+    <noscript><p>Activa JavaScript para usar los filtros y consultar los procesos.</p></noscript>
+
+    <div id="tablero" hidden>
+      <div class="filtros" aria-label="Filtros del tablero" role="group">
+        <label for="entidad">Entidad compradora
+          <select id="entidad"><option value="">Todas las entidades</option></select>
+        </label>
+        <label for="mes">Mes de apertura
+          <select id="mes"><option value="">Todo 2025</option></select>
+        </label>
+        <button class="limpiar" id="limpiar" type="button" disabled>Limpiar filtros</button>
+      </div>
+
+      <dl class="indicadores" aria-label="Resumen de los procesos filtrados">
+        <div><dt>Procesos del rubro</dt><dd id="total-procesos"></dd></div>
+        <div><dt>Entidades compradoras</dt><dd id="total-entidades"></dd></div>
+        <div><dt>Meses con aperturas</dt><dd id="total-meses"></dd></div>
+      </dl>
+
+      <div class="paneles">
+        <section class="panel" aria-labelledby="titulo-meses">
+          <h2 id="titulo-meses">Aperturas por mes</h2>
+          <p>Selecciona un mes para ver sus procesos.</p>
+          <div id="grafico" class="grafico" role="group" aria-labelledby="titulo-meses"></div>
+        </section>
+        <section class="panel" aria-labelledby="titulo-ranking">
+          <h2 id="titulo-ranking">Principales compradores</h2>
+          <p id="periodo-ranking">Procesos abiertos en 2025</p>
+          <ol class="ranking" id="ranking"></ol>
+          <p id="ranking-vacio" hidden>Este mes no registra procesos del rubro.</p>
+        </section>
+      </div>
+
+      <details class="cobertura">
+        <summary>
+          <span>Cobertura de códigos CPC</span>
+          <span class="nota-cobertura" id="resumen-cobertura"></span>
+        </summary>
+        <p>Incluye todas las subastas inversas del país. Los procesos sin CPC no se pueden asignar a un rubro.</p>
+        <table class="tabla-cobertura">
+          <thead><tr><th scope="col">Mes</th><th scope="col">Total</th><th scope="col">Sin CPC</th><th scope="col">Cobertura</th></tr></thead>
+          <tbody id="filas-cobertura"></tbody>
+        </table>
+      </details>
+
+      <section class="resultados" aria-labelledby="titulo-resultados">
+        <h2 id="titulo-resultados">Procesos de contratación</h2>
+        <p id="resumen-resultados" role="status"></p>
+        <div class="tabla-procesos" id="tabla-procesos">
+          <table aria-labelledby="titulo-resultados">
+            <thead><tr><th scope="col">Apertura</th><th scope="col">Entidad</th><th scope="col">Objeto del proceso</th><th scope="col">Fuente</th></tr></thead>
+            <tbody id="procesos"></tbody>
+          </table>
+        </div>
+        <button class="mas" id="mas" type="button" hidden>Mostrar más procesos</button>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>Fuente de datos <a href="https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/datos-abiertos/">SERCOP, Contrataciones Abiertas Ecuador</a> · <a href="https://creativecommons.org/licenses/by/3.0/ec/">CC BY 3.0 Ecuador</a></p>
+    <p>Selección por rubro y modalidad. Conteos por identificador único y fecha de apertura de ofertas.</p>
+  </footer>
+</body>
+</html>

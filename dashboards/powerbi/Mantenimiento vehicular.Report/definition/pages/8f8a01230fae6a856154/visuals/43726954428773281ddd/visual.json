@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "43726954428773281ddd",
+  "position": {
+    "x": 340,
+    "y": 176,
+    "z": 700,
+    "width": 288,
+    "height": 105,
+    "tabOrder": 700
+  },
+  "visual": {
+    "visualType": "card",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "P25 de contrato"
+                }
+              },
+              "queryRef": "Procesos.P25 de contrato",
+              "nativeQueryRef": "P25 de contrato"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "name": "Bookmark4a598c1567981e72cfd5",
+  "displayName": "Competencia",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "4a598c1567981e72cfd5",
+    "sections": {
+      "4a598c1567981e72cfd5": {
+        "visualContainers": {}
+      }
+    }
+  }
+}

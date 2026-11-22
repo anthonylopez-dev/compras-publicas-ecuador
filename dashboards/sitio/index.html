@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es-EC">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compradores, competencia y contratos de mantenimiento vehicular en las subastas inversas de Ecuador de 2025.">
+  <title>Mantenimiento vehicular · Compras públicas de Ecuador</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="tablero.css">
+  <script defer src="datos.js"></script>
+  <script defer src="tablero.js"></script>
+</head>
+<body>
+  <header class="marca"><div class="ancho"><span>Compras públicas <span>Ecuador</span></span><a href="#fuente">Fuente y cobertura</a></div></header>
+  <main class="ancho">
+    <header class="portada">
+      <h1>Mantenimiento vehicular</h1>
+      <p>Subasta Inversa Electrónica · CPC 87141 · Aperturas de enero a diciembre de 2025</p>
+    </header>
+    <p id="estado" role="status">Cargando datos de SERCOP…</p>
+    <noscript>Activa JavaScript para consultar el tablero y sus filtros.</noscript>
+    <div id="tablero" hidden>
+      <div class="filtros" role="group" aria-label="Filtros del tablero">
+        <label>Entidad<select id="entidad"><option value="">Todas las entidades</option></select></label>
+        <label>Mes de apertura<select id="mes"><option value="">Todo 2025</option></select></label>
+        <label>Código CPC<select id="cpc"><option value="">Todos los códigos</option></select></label>
+        <button id="limpiar" type="button" class="accion" disabled>Limpiar filtros</button>
+      </div>
+      <nav class="vistas" aria-label="Vistas del tablero">
+        <button type="button" data-vista="resumen" aria-pressed="true">Resumen</button>
+        <button type="button" data-vista="compradores" aria-pressed="false">Compradores</button>
+        <button type="button" data-vista="competencia" aria-pressed="false">Competencia</button>
+        <button type="button" data-vista="montos" aria-pressed="false">Montos y plazos</button>
+        <button type="button" data-vista="procesos" aria-pressed="false">Procesos</button>
+      </nav>
+      <p id="seleccion" class="visualmente-oculto" role="status"></p>
+      <section id="resumen" class="vista" aria-label="Resumen">
+        <dl id="indicadores" class="indicadores"></dl>
+        <div class="rejilla">
+          <section class="panel">
+            <h2>Aperturas por mes</h2>
+            <p class="ayuda">Selecciona un mes para filtrar. La serie muestra todo el año para la entidad y el código elegidos.</p>
+            <div id="calendario" class="calendario" role="group" aria-label="Aperturas por mes"></div>
+          </section>
+          <aside class="panel contexto">
+            <h2>Lectura de 2025</h2>
+            <p id="lectura"></p>
+            <p class="ayuda">Compara cuántas veces aparece una entidad y en cuántos meses distintos.</p>
+            <button type="button" data-ir="compradores" class="accion">Ver compradores</button>
+          </aside>
+        </div>
+      </section>
+      <section id="compradores" class="vista" hidden>
+        <h2>Quién abre procesos en distintos meses</h2>
+        <p id="bajada-compradores" class="ayuda"></p>
+        <div class="panel tabla" id="ranking"></div>
+      </section>
+      <section id="competencia" class="vista" hidden>
+        <h2>Cuántos oferentes participaron</h2>
+        <p id="bajada-competencia" class="ayuda"></p>
+        <div class="rejilla">
+          <section class="panel"><h3>Procesos adjudicados por número de oferentes</h3><div id="oferentes" class="barras"></div></section>
+          <section class="panel contexto"><h3>Vinculación con proveedores</h3><p id="proveedores"></p><p class="ayuda">El vínculo usa la adjudicación que identifica el contrato.</p></section>
+        </div>
+      </section>
+      <section id="montos" class="vista" hidden>
+        <h2>Qué tamaño tuvieron los contratos y cuánto tardaron en firmarse</h2>
+        <p class="ayuda">Montos totales de contratos en USD. Los plazos miden días calendario hasta la primera firma registrada.</p>
+        <div class="rejilla equilibrada">
+          <section class="panel"><h3>Tamaño de contrato</h3><div id="importes"></div><p class="ayuda">La comparación de precios requiere revisar cantidades, repuestos y alcance.</p></section>
+          <section class="panel"><h3>Tiempo desde la apertura</h3><div id="firmas"></div></section>
+        </div>
+      </section>
+      <section id="procesos" class="vista" hidden>
+        <h2>Qué fichas respaldan los datos</h2>
+        <label class="buscar">Buscar por código del proceso o entidad<input id="buscar" type="search" maxlength="150"></label>
+        <p id="conteo-procesos" class="ayuda" role="status"></p>
+        <div class="panel tabla" id="listado"></div>
+        <button type="button" class="accion mas" id="mas" hidden>Mostrar más procesos</button>
+      </section>
+      <footer id="fuente" class="pie">
+        <details>
+          <summary>Cobertura de códigos CPC <span id="resumen-cobertura"></span></summary>
+          <p class="ayuda">Base nacional de todas las subastas inversas de 2025. Los registros sin CPC quedan fuera de la identificación del rubro.</p>
+          <div class="tabla" id="cobertura"></div>
+        </details>
+        <p><a href="https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/datos-abiertos/">SERCOP, Contrataciones Abiertas Ecuador</a> · <a href="https://creativecommons.org/licenses/by/3.0/ec/">CC BY 3.0 Ecuador</a></p>
+        <p class="ayuda">Corte histórico. Selección y agregación por fecha de apertura, modalidad y CPC.</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

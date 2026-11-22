@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "769c758ed9e16524c73f",
+  "position": {
+    "x": 32,
+    "y": 295,
+    "z": 1000,
+    "width": 800,
+    "height": 365,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mes"
+                    }
+                  },
+                  "Property": "Mes"
+                }
+              },
+              "queryRef": "Mes.Mes",
+              "nativeQueryRef": "Mes"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Aperturas"
+                }
+              },
+              "queryRef": "Procesos.Aperturas",
+              "nativeQueryRef": "Aperturas"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Mes"
+                  }
+                },
+                "Property": "Mes"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Aperturas por mes'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

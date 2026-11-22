@@ -1,0 +1,118 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "eb14933e2c722551f94e",
+  "position": {
+    "x": 32,
+    "y": 193,
+    "z": 600,
+    "width": 1210,
+    "height": 462,
+    "tabOrder": 600
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Entidad"
+                    }
+                  },
+                  "Property": "Entidad"
+                }
+              },
+              "queryRef": "Entidad.Entidad",
+              "nativeQueryRef": "Entidad"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Meses activos"
+                }
+              },
+              "queryRef": "Procesos.Meses activos",
+              "nativeQueryRef": "Meses activos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Aperturas"
+                }
+              },
+              "queryRef": "Procesos.Aperturas",
+              "nativeQueryRef": "Aperturas"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Procesos"
+                  }
+                },
+                "Property": "Meses activos"
+              }
+            },
+            "direction": "Descending"
+          },
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Procesos"
+                  }
+                },
+                "Property": "Aperturas"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Compradores ordenados por meses activos y aperturas'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

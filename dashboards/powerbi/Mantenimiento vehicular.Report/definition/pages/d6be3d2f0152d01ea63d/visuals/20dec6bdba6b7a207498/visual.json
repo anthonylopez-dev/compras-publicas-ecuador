@@ -1,0 +1,147 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "20dec6bdba6b7a207498",
+  "position": {
+    "x": 32,
+    "y": 193,
+    "z": 600,
+    "width": 1210,
+    "height": 462,
+    "tabOrder": 600
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Apertura"
+                }
+              },
+              "queryRef": "Procesos.Apertura",
+              "nativeQueryRef": "Apertura"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Entidad"
+                    }
+                  },
+                  "Property": "Entidad"
+                }
+              },
+              "queryRef": "Entidad.Entidad",
+              "nativeQueryRef": "Entidad"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Código"
+                }
+              },
+              "queryRef": "Procesos.Código",
+              "nativeQueryRef": "Código"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Oferentes"
+                }
+              },
+              "queryRef": "Procesos.Oferentes",
+              "nativeQueryRef": "Oferentes"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Días a la firma"
+                }
+              },
+              "queryRef": "Procesos.Días a la firma",
+              "nativeQueryRef": "Días a la firma"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Ficha SERCOP"
+                }
+              },
+              "queryRef": "Procesos.Ficha SERCOP",
+              "nativeQueryRef": "Ficha SERCOP"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Procesos"
+                  }
+                },
+                "Property": "Apertura"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Procesos con enlace a la ficha oficial'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

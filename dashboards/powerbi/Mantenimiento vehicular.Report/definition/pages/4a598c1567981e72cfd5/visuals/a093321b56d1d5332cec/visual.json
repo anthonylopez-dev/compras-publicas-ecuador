@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "a093321b56d1d5332cec",
+  "position": {
+    "x": 32,
+    "y": 176,
+    "z": 600,
+    "width": 288,
+    "height": 105,
+    "tabOrder": 600
+  },
+  "visual": {
+    "visualType": "card",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Procesos"
+                    }
+                  },
+                  "Property": "Adjudicados con conteo"
+                }
+              },
+              "queryRef": "Procesos.Adjudicados con conteo",
+              "nativeQueryRef": "Adjudicados con conteo"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

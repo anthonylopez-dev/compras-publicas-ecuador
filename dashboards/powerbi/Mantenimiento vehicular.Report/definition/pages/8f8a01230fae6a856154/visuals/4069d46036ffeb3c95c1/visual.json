@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "4069d46036ffeb3c95c1",
+  "position": {
+    "x": 879,
+    "y": 320,
+    "z": 1100,
+    "width": 340,
+    "height": 245,
+    "tabOrder": 1100
+  },
+  "visual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Los montos representan el valor total del contrato. Para comparar precios se requiere revisar flota, cantidades, repuestos y duración.",
+                    "textStyle": {
+                      "fontSize": "17pt",
+                      "fontFamily": "Segoe UI",
+                      "color": "#183C30"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
