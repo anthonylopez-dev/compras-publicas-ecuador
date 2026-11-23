@@ -48,7 +48,7 @@ Para medirlo, se propone que entre cinco y diez proveedores elijan compradores y
 
 - **Cobertura.** En la modalidad, 1.014 de 18.333 procesos (5,5 %) carecían de CPC. El filtro puede dejar fuera procesos del rubro. El piloto describe una modalidad y un año de aperturas. Para evaluar estacionalidad hacen falta más años con cobertura comparable.
 - **Plazos.** En 38 procesos del piloto faltaba una firma utilizable. La mediana describe los casos con firma observada. La fecha de cierre de ofertas faltaba en el corte, por lo que debe consultarse el cronograma de cada ficha. Las fechas de ejecución y de pago quedan fuera del análisis.
-- **Validación.** El tablero público abre sin sesión. Quedan pendientes el refresco autenticado en Power BI Desktop y una lectura con una persona ajena al proyecto. La prueba de lectura consiste en pedirle que explique a quién ayuda el tablero y qué haría con él después de ver el resumen.
+- **Validación.** El tablero público abre sin sesión y el refresco desde PostgreSQL se comprobó en Power BI Desktop. Queda pendiente una lectura con una persona ajena al proyecto. La prueba consiste en pedirle que explique a quién ayuda el tablero y qué haría con él después de ver el resumen. [Verificación de los tableros](fase-4-tableros.md).
 
 ## Prueba de estimación de montos
 

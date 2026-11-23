@@ -11,7 +11,9 @@ Los dos tableros presentan las subastas inversas con apertura en 2025 del grupo 
 
 El modelo relaciona las dimensiones Mes y Entidad con los hechos de procesos y contratos. La cobertura se relaciona solo con el mes y conserva el denominador nacional de la modalidad. Las medidas DAX distinguen aperturas, adjudicados con conteo, contratos y firmas. El informe incluye cinco páginas y sus marcadores.
 
-El PBIX abre con los datos importados. El parámetro `UsarPostgreSQL` permite seleccionar la fuente directa. Para ese modo, configura `ServidorPostgreSQL` y autentícate en el conector de Power BI con un usuario autorizado para leer las vistas del proyecto. Se comprobaron las cinco consultas contra la base local y los datos importados. El refresco autenticado queda por comprobar desde Power BI. [Conector PostgreSQL de Power Query](https://learn.microsoft.com/en-us/power-query/connectors/postgresql) · [Base de la Fase 2](fase-2-datos.md)
+El PBIX abre con los datos importados. Para refrescar la importación desde PostgreSQL, activa `UsarPostgreSQL`, configura `ServidorPostgreSQL` y autentícate en el conector de Power BI con un usuario autorizado para leer las vistas del proyecto. [Conector PostgreSQL de Power Query](https://learn.microsoft.com/en-us/power-query/connectors/postgresql) · [Base de la Fase 2](fase-2-datos.md)
+
+El 22 de noviembre de 2026 se comprobó el refresco autenticado en una copia del PBIX en Power BI Desktop. Las cinco consultas a PostgreSQL coincidieron fila por fila con los datos incluidos en el proyecto. Tras autorizar las consultas y conectar a la instancia local, el resumen mostró **239 aperturas, 181 entidades, 201 contratos en USD y 94,5 % de cobertura CPC**. La instancia de prueba escuchaba solo en `127.0.0.1:55432` y la sesión local se realizó sin TLS.
 
 ## Web pública e incrustación
 
